@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="android.java.pl.galleryap.activity.LoginActivity"
+    android:background="@android:color/holo_green_dark">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:id="@+id/progressBar"
+        android:layout_marginBottom="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_alignTop="@+id/editPassword"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="46dp"
+        android:id="@+id/editPassword"
+        android:shadowColor="@android:color/white"
+        android:background="@android:color/background_light"
+        android:layout_below="@+id/textPassword"
+        android:layout_alignLeft="@+id/textPassword"
+        android:layout_alignStart="@+id/textPassword" />
+
+    <TextView
+        android:text="Insert password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:id="@+id/textPassword"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_below="@+id/editUsername"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Invalid username or @string/error_incorrect_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp"
+        android:id="@+id/errorText"
+        android:visibility="invisible"
+        tools:textColor="@android:color/holo_red_dark"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        tools:text="Invalid username or password" />
+
+    <TextView
+        android:text="Create new user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/errorText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp"
+        android:id="@+id/newUserText"
+        android:layout_alignRight="@+id/errorText"
+        android:layout_alignEnd="@+id/errorText"
+        android:textColor="?attr/actionModeSplitBackground" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="26dp"
+        android:id="@+id/editUsername"
+        android:background="@android:color/background_light"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textUsername"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Insert username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textUsername"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_marginTop="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
